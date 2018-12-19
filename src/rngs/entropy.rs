@@ -206,6 +206,7 @@ impl EntropySource for NoSource {
               target_os = "openbsd", target_os = "bitrig",
               target_os = "redox",
               target_os = "fuchsia",
+              target_os = "vxworks",
               windows,
               all(target_arch = "wasm32", feature = "stdweb")
 )))]
@@ -225,6 +226,7 @@ pub struct Os(rngs::OsRng);
               target_os = "openbsd", target_os = "bitrig",
               target_os = "redox",
               target_os = "fuchsia",
+              target_os = "vxworks",
               windows,
               all(target_arch = "wasm32", feature = "stdweb")
 )))]
@@ -253,6 +255,7 @@ impl EntropySource for Os {
                   target_os = "openbsd", target_os = "bitrig",
                   target_os = "redox",
                   target_os = "fuchsia",
+                  target_os = "vxworks",
                   windows,
                   all(target_arch = "wasm32", feature = "stdweb")
 ))))]

@@ -194,6 +194,7 @@ pub use self::std::StdRng;
               target_os = "openbsd", target_os = "bitrig",
               target_os = "redox",
               target_os = "fuchsia",
+              target_os = "vxworks",
               windows,
               all(target_arch = "wasm32", feature = "stdweb")
 )))]
@@ -212,6 +213,7 @@ mod os;
               target_os = "openbsd", target_os = "bitrig",
               target_os = "redox",
               target_os = "fuchsia",
+              target_os = "vxworks",
               windows,
               all(target_arch = "wasm32", feature = "stdweb")
 )))]

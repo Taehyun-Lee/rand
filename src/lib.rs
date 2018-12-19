@@ -236,6 +236,8 @@
 #![cfg_attr(all(feature="i128_support", feature="nightly"), feature(i128_type, i128))]
 #![cfg_attr(feature = "stdweb", recursion_limit="128")]
 
+#![cfg_attr(target_os = "vxworks", feature(libc))]
+
 #[cfg(feature="std")] extern crate std as core;
 #[cfg(all(feature = "alloc", not(feature="std")))] extern crate alloc;
 
